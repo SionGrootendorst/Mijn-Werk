@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+    height: 1600px;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    max-height: 890px;
+    height: 890px;
+
+}
+
+.achtergrond {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+}
+
+.foto {
+    width: 100%;
+    height: 100%;
+}
+
+.fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.849), rgba(255, 255, 255, 0));
+    width: 100%;
+    height: 100%;
+}
+
+.informatie {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    width: 100%;
+}
+
+.info_film {
+    flex: 2;
+    padding-left: 120px;
+}
+
+
+.logo {
+    width: 200px;
+    height: auto;
+    background-image: linear-gradient(to right, #c51e1e96, #c51e1e4f);
+    border-left: 4px solid #c51e1e;
+}
+
+.rood {
+    color: #c51e1e;
+}
+
+button {
+    background: #c51e1e;
+    width: 30%;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.info_cast {
+    margin-top: 2rem;
+}
+
+.logo2 {
+    width: 200px;
+    height: 100%;
+    position: relative;
+    top: 5px;
+    left: 20px;
+}
+
+.checked {
+    color: #c51e1e !important;
+}
+
+.rating {
+    display: flex;
+}
+
+.rate {
+    color: rgb(184, 184, 184);
+    margin-top: 5px !important;
+}
+
+.time {
+    color: rgb(184, 184, 184);
+}
+
+/* NAVBAR */
+
+header {
+    background: rgba(0, 0, 0, 0.568);
+    z-index: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-right: 150px;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    margin-right: 50px;
+    float: right;
+}
+
+li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    color: #c51e1e;
+}
+
+
+
+/* Vertsie 2 */
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.foto_background {
+    width: 100%;
+    height: auto;
+}
+
+.body_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.103) 0%, rgba(0, 0, 0, 0.719) 23%, rgb(0, 0, 0) 100%);
+    z-index: -1;
+    width: 100%;
+    height: 1200px;
+}
+
+.trailer_div {
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.trailer_div i {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 45px;
+    background: -webkit-linear-gradient(#ca1d1d, rgb(201, 201, 201));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .3s;
+    border: 2px solid rgb(196, 196, 196);
+    border-radius: 50%;
+}
+
+.trailer_div i:hover {
+    transform: scale(1.2);
+}
+
+.content {
+    margin-left: 27rem;
+    margin-right: 27rem;
+    margin-top: 4rem;
+    height: 1000px;
+}
+
+.voorkant_film {
+    display: flex;
+}
+
+.voorkant_cover {
+    flex: 1;
+    padding-left: 3rem;
+}
+
+.info_cover {
+    flex: 3;
+    margin-left: 1rem;
+}
+
+.cover_foto {
+    width: 80%;
+    height: auto;
+}
+
+h1 {
+    color: #fff;
+    font-size: 40px;
+}
+
+.info_tickets {
+    color: #fff;
+    display: flex;
+    padding-left: 3rem;
+}
+
+.info_tickets i {
+    color: #c51e1e;
+}
+
+.rating_info_div {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.rating_info {
+    padding-left: 3rem;
+    flex: 1;
+}
+
+.rating span {
+    color: rgb(202, 202, 202);
+}
+
+.info_movie {
+    flex: 2;
+}
+
+.peggie {
+    display: flex;
+}
+
+.peggie img {
+    width: 40px;
+    height: auto;
+}
+
+.genres {
+    display: flex;
+}
+
+.genres button {
+    color: #000;
+    background: rgb(184, 184, 184);
+    width: fit-content;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.info_movie p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.extra_info {
+    color: #c51e1e !important;
+}
+
+.cast {
+    display: flex;
+}
+
+.cast_info {
+    padding-left: 3rem;
+}
+
+h4 {
+    font-size: 20px;
+    color: #fff;
+}
+
+hr {
+    color: rgb(92, 92, 92);
+    margin-top: 4rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-bottom: 4rem;
+}
+
+.persoon {
+    width: 150px;
+    height: 400px;
+    overflow: hidden;
+    margin-left: 15px;
+}
+
+.persoon img {
+    width: 100%;
+    height: auto;
+}
+
+.next {
+    margin-left: 1rem;
+}
+
+.naam_cast {
+    color: #fff;
+    margin-bottom: 0 !important;
+}
+
+.video {
+    position: absolute;
+    background: rgb(29, 28, 28);
+    top: 80px;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    overflow: hidden;
+    height: 0px;
+    transition: .8s;
+    box-shadow: 0 20px 6px -6px rgb(24, 23, 23);
+}
+
+.video h1 {
+    font-size: 25px;
+    font-weight: 900 !important;
+}
+
+.trailer_video {
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin-top: 3.5rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+iframe {
+    width: 100%;
+    height: 80%;
+}
+
+.naam_trailer {
+    position: relative;
+    padding-left: 1rem;
+}
+
+.icoon {
+    position: absolute;
+    top: 0;
+    right: 80px;
+}
+
+.icoon i {
+    font-size: 35px;
+    color: #c51e1e !important;
+}
+
+.role_name {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 0 !important;
+}
+
+/* Tijden form */
+.tijden {
+    position: absolute;
+    top: 81px;
+    right: 0;
+    width: 0px;
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.568);
+    transition: .8s;
+    overflow: hidden;
+    color: #fff;
+    border-left: #fff solid 2px;
+}
+
+.tijden_h1 {
+    padding-left: 3rem;
+    font-size: 25px !important;
+    display: flex;
+}
+
+.tijden_h1 i {
+    position: relative;
+    top: 2.2rem;
+    left: 10rem;
+    float: right;
+    font-size: 30px !important;
+}
+
+.tijden_dag {
+    padding-left: 2rem;
+
+}
+
+.tijden_dag h3 {
+    font-size: 25px;
+    color: #fff !important;
+}
+
+.tijd_uitzoeken {
+    color: #000 !important;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 25px 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.tijd_uitzoeken>div {
+    border-radius: 10px;
+    background: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.tijd_uitzoeken>div:hover {
+    border-radius: 10px;
+    background: rgb(202, 202, 202);
+    padding: 5px;
+    cursor: pointer;
+}
+
+.tijd_uitzoeken p {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    color: #000000 !important;
+    font-size: 20px !important;
+}
+
+.tijd_uitzoeken a {
+    text-decoration: none;
+    background: #fff !important;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.tijd_uitzoeken h4 {
+    color: #000 !important;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}
+
+.soort_film {
+    color: #000 !important;
+    text-align: center;
+    justify-content: center;
+}
+
+.soort_film p {
+    color: #000 !important;
+}
+
+#twee {
+    background: lightgray;
+}
+
+#drie {
+    background: rgb(253, 222, 46);
+}
+
+#vier {
+    background: rgb(207, 6, 6);
+}
+
+#vier p {
+    color: #fff !important;
+}
+
+#dolby {
+    background: rgb(35, 88, 162);
+}
+
+#dolby p {
+    color: #fff !important;
+}
+
+#imax {
+    background: rgb(40, 40, 40);
+}
+
+#imax p {
+    color: #fff !important;
+}
+
+
+/* Media queries */
+@media only screen and (max-width: 1750px) {
+    .content {
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+}
+
+@media only screen and (max-width: 1530px) {
+    .content {
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+}
+
+@media only screen and (max-width: 1326px) {
+    .content {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+
+@media only screen and (max-width: 1166px) {
+    .content {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
+@media only screen and (max-width: 1006px) {
+    .content {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+
+@media only screen and (max-width: 847px) {
+    .voorkant_cover {
+        flex: 2;
+    }
+
+    .kopen{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 798px) {
+    .kopen {
+        width: 50%;
+    }
+
+    .genres {
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    .genres button{
+        display: block;
+        margin-top: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 659px) {
+    .info_movie {
+        padding-right: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 614px) {
+    .kopen {
+        width: 60%;
+    }
+
+    .cast_info {
+        padding-left: 0rem;
+    }
+
+    .info_movie {
+        padding-right: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 539px) {
+    .kopen {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 491px) {
+    .rating_info_div {
+        display: block;
+    }
+
+    .trailer_div {
+        display: none;
+    }
+
+    .rating_info {
+        padding-left: 0;
+        display: flex;
+    }
+
+    .IMDB {
+        position: relative;
+        top: 0.7rem;
+        left: 2rem;
+    }
+
+    .tijd {
+        position: relative;
+        top: 0.1rem;
+        left: 3rem;
+    }
+
+    .genres {
+        display: none;
+    }
+
+    .tijden_h1 i {
+        left: 8rem;
+    }
+
+    .kopen {
+        font-size: 15px !important;
+    }
+
+    .peggie {
+        position: relative;
+        left: 4em;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .voorkant_film {
+        display: block;
+    }
+
+    .voorkant_cover {
+        display: none;
+    }
+
+    .tijden_h1 i {
+        left: 2rem;
+    }
+
+    .tijd_uitzoeken {
+        grid-template-columns: auto;
+    }
+
+    .tijden_dag {
+        padding-left: 0rem;
+    }
+
+    .tijden {
+        top: 76px;
+    }
+
+    .background {
+        height: 800px;
+    }
+
+    .foto_background{
+        width: auto;
+        height: 100%;
+    }
+
+    .info_movie {
+        padding-left: 10px;
+    }
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    .tijden_h1 i {
+        left: 1rem;
+    }
+
+    .tijd_uitzoeken {
+        grid-template-columns: auto;
+    }
+
+    .tijden {
+        top: 77px;
+    }
+
+    .voorkant_film {
+        display: block;
+    }
+
+    .voorkant_cover {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .peggie {
+        top: 3.4rem;
+        left: 0rem;
+    }
+}

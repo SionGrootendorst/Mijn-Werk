@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif !important;
+    overflow: hidden;
+    background: #000;
+}
+
+header {
+    top: 0 !important;
+}
+
+.logo-container {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+#stoel_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    min-width: 1250px;
+}
+
+.body_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.103) 0%, rgba(0, 0, 0, 0.719) 23%, rgb(0, 0, 0) 100%);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-container h1 {
+    color: white;
+    height: 100%;
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.logo-container {
+    display: flex;
+}
+
+
+h1 {
+    margin: 5px;
+}
+
+.navigation a {
+    margin-top: 20px;
+    height: 100%;
+    float: right;
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+a:hover {
+    color: gray;
+}
+
+#stoel_title {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    right: 0;
+    margin-top: -24px;
+    color: #fff;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.62);
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+#stoel_title span {
+    color: #bf2014;
+}
+
+.container {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-top: 5rem;
+    margin-right: 17rem;
+    margin-left: 17rem;
+    padding: 20px 100px;
+    background: rgba(0, 0, 0, 0.54);
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.grid-layout {
+
+    color: white;
+    margin-top: 50px;
+    padding: 20px 30px;
+    border-bottom: none;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(17, 1fr);
+    grid-gap: 15px;
+    margin-top: 0rem !important;
+}
+
+.p_stoel {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    background: #bf2014;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #fff;
+    left: 15px;
+    cursor: pointer;
+
+}
+
+.box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    border: 1px solid #bf2014;
+    width: 100%;
+    padding-top: 100%;
+    background-color: #313131;
+    align-items: center;
+    border-radius: 6px !important;
+    background: rgb(72,37,108);
+    transition: .3s;
+    background: radial-gradient(circle, rgba(72,37,108,0.3337928921568627) 19%, rgba(72,37,108,1) 84%);
+}
+
+.box.selected {
+
+    background: #bf2014 !important;
+}
+
+.box:nth-child(86) {
+    grid-column: 2/3;
+}
+
+
+.box:nth-child(101) {
+    grid-column: 3/4;
+}
+
+.container-doek {
+    display: flex;
+    justify-content: center;
+}
+
+.doek {
+    width: 100%;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+    padding: 5px;
+    border-top: none;
+}
+
+#hr_doek {
+
+    height: 100px;
+    margin-top: -40px;
+    border: solid 5px #ffffff;
+    border-color: #ffffff transparent transparent transparent;
+    border-radius: 65%/100px 100px 0 0;
+    transform: rotate(180deg);
+}
+
+.container-ticketKoop {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.ticketKoop {
+    transition: .4s;
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.fadeTicketKnop {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.button-28 {
+
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    z-index: 2;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+}
+
+.button-28:disabled {
+    pointer-events: none;
+}
+
+.button-28:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.container-ticketsKopenForm {
+    /*justify-content: center;*/
+    /*display: flex;*/
+    /*z-index: 2;*/
+    /*height: 0;*/
+    /*overflow: hidden;*/
+    /*position: absolute;*/
+    /*background: transparent;*/
+    /*width: 50%;*/
+    /*bottom: 0;*/
+    /*left: 495px;*/
+    /*color: white;*/
+    /*transition: .7s;*/
+    justify-content: center;
+    display: flex;
+    z-index: 2;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    transition: .7s;
+}
+
+.ticketContainer {
+    display: flex;
+    position: relative;
+    top: 3rem;
+}
+
+.ticketInfo {
+    /* background: whitesmoke; */
+    background: rgba(0, 0, 0, 0.927);
+    height: 100%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    /* color: black; */
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+.button-Hide {
+    float: left !important;
+}
+
+.ticketsZien {
+    z-index: 1;
+    background: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: .7s;
+}
+
+#tickets {
+    margin: 5px;
+}
+
+#optionTickets {
+    height: 200px;
+    overflow-y: auto;
+}
+
+.taken {
+    background: rgba(90, 90, 90, 0.42) !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    border: 1px solid #bf2014;
+    width: 100%;
+    padding-top: 100%;
+    background-color: #313131;
+    align-items: center;
+    border-radius: 6px !important;
+}
+
+@media screen and (max-width: 1450px) {
+    .container {
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .container {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        padding: 0;
+    }
+    #grid {
+        grid-gap: 12px;
+        margin-top: 50px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        margin-right: 1px;
+        margin-left: 1px;
+        padding: 0;
+    }
+    #grid {
+        grid-gap: 6px;
+
+    }
+}
+
+.foto_film {
+    flex: 1;
+    margin-left: 2rem;
+    padding-left: 15rem;
+}
+
+.foto_film img {
+    width: 100%;
+}
+
+.info_betalen {
+    flex: 3;
+    display: flex;
+    margin-left: 3rem;
+}
+
+.betaal {
+    flex: 3;
+    margin-left: 1rem;
+}
+
+.button-Hide {
+    background: #c51e1e !important;
+    color: #fff !important;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.betalen {
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 2rem;
+    position: relative;
+}
+
+.hr1 {
+    color: rgb(187, 187, 187);
+    background: rgb(187, 187, 187);
+}
+
+input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+}
+
+.hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.master {
+    position: relative;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: auto;
+    height: 42px;
+}
+
+.visa {
+    position: relative;
+    width: 70px;
+    height: 25px;
+}
+
+.paypal {
+    position: relative;
+    top: 0.8rem;
+    left: 0.2rem;
+    width: 95px;
+    height: 42px;
+}
+
+.google_input {
+    position: relative;
+    bottom: 2rem;
+}
+
+.google {
+    position: relative;
+    width: 120px;
+    height: 65px;
+    top: -0.4rem;
+    left: 0.2rem;
+}
+
+.ideal {
+    position: relative;
+    bottom: 0.2rem;
+    width: auto;
+    height: 42px;
+}
+
+.ideal_input {
+    position: relative;
+    bottom: 1rem;
+}
+
+.laatste {
+    margin-top: 0 !important;
+    position: relative;
+    bottom: 0.5rem;
+}
+
+.SubmitButton {
+    border: none;
+    padding: 5px;
+    border-radius: 8px;
+    background: #c51e1e;
+    color: #fff;
+}
+
+.opties_knop {
+    position: relative;
+    width: 250px;
+    display: flex;
+    left: 6rem;
+    bottom: 2.8rem;
+    font-size: 14px;
+    background: rgb(234, 234, 234);
+    border: 1px grey solid;
+    color: #1A1A1A;
+    border-radius: 8px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.opties_knop p {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.opties_knop i {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.banken {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    overflow: hidden;
+    padding-right: 50px;
+    grid-gap: 10px;
+    width: 300px;
+    transition: .3s;
+    height: 0px;
+}
+
+.banken > div {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.banken > div:target {
+    border: 4px black solid;
+}
+
+.banken img {
+    width: 100%;
+    height: 100%;
+}
+
+input[type="email"] {
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+select {
+    padding: 8px;
+    margin-top: 0.4rem;
+    width: 250px;
+}
+
+.rikrol {
+    position: absolute;
+    right: 80px;
+    top: 300px;
+    width: 280px;
+    text-align: center;
+    display: none;
+}
+
+.rikrol img {
+    width: 100%;
+    height: auto;
+}
+
+.rikrol h3 {
+    margin: 0 !important;
+}
+
+@media only screen and (max-width: 1050px) {
+    .foto_film {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 755px) {
+    .info_betalen {
+        margin-left: 0;
+    }
+
+    .rikrol {
+        right: 200px;
+    }
+
+    .ticketContainer {
+        display: block;
+    }
+
+    .foto_film {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 415px) {
+    .info_betalen {
+        display: block;
+    }
+}

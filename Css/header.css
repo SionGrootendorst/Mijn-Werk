@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    font-family: arial;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.49);
+    z-index: 99;
+}
+
+header nav {
+    float: right;
+    line-height: 70px;
+    margin-right: 20px;
+}
+
+header img {
+    width: 200px;
+}
+
+header nav a {
+    padding: 4px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+header nav a:hover {
+    color: rgba(236, 236, 236, 0.64);
+}

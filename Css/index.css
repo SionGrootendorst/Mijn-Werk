@@ -1,0 +1,283 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* vars */
+
+#header_logo {
+    margin-left: 20px;
+    margin-top: 16px;
+}
+
+:root {
+    --fontTitle: 'Bebas Neue', cursive;
+    --redColor: #ea2515;
+    --redHoverColor: #bf2014;
+    --mainBackground: #1d1d1d;
+}
+
+body {
+    background: var(--mainBackground);
+    overflow-x: hidden;
+    transition: .3s;
+}
+
+html {
+    transition: .3s;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: blue;
+}
+
+body::-webkit-scrollbar-track-piece {
+    background: red;
+}
+
+/* Index Banner */
+
+#banner {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 100px; */
+    height: clamp(10rem, 45vw, 670px);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#banner_bg {
+    position: absolute;
+    height: 750px;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    margin-top: -70px;
+    overflow: hidden;
+
+}
+
+.banner_img {
+    animation: banner_bg 1.5s;
+    position: absolute;
+}
+
+@keyframes banner_bg {
+    0% {margin-left: 200%}
+    100% {margin-left: 0}
+}
+
+#banner_bg img {
+    width: 100%;
+    margin-top: 0;
+}
+
+#banner_movie_title h1 {
+    color: #fff;
+    left: 50%;
+    top: 200px;
+    transform: translate(-50%, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.62);
+    font-family: var(--fontTitle);
+    font-size: 40px;
+    position: absolute;
+    animation: h1 1.5s;
+}
+
+@keyframes h1 {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+#banner_movie_title button {
+    padding: 5px;
+    position: absolute;
+    width: 200px;
+    border: none;
+    font-family: var(--fontTitle);
+    font-size: 30px;
+    border-radius: 8px;
+    background: var(--redColor);
+    color: #fff;
+    margin-left: -100px;
+   margin-top: 300px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+    transition: .2s;
+}
+
+#banner_movie_title button:hover {
+    background: var(--redHoverColor);
+}
+
+/* Movies */
+
+#main {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: 50px;
+}
+
+#main::-webkit-scrollbar {
+    margin: 3px;
+    background: transparent;
+}
+
+#main::-webkit-scrollbar-track {
+
+}
+
+#main::-webkit-scrollbar-thumb {
+    background: #323232;
+    border-radius: 8px
+}
+
+.movie {
+    margin: 20px;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.movie:hover {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.71);
+    transform: translateY(-10px);
+}
+
+.movie_container {
+    height: 300px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.81);
+}
+
+.movie_container img {
+    width: 200px;
+}
+
+#now_playing {
+    font-family: var(--fontTitle);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    background: #1d1d1d;
+    margin: 0;
+    margin-top: 20px;
+    background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, rgba(29, 29, 29, 0.51) 39%, #1d1d1d 69%);
+}
+
+#now_playing span{
+    color: var(--redColor);
+    margin-left: 10px;
+}
+
+#now_playing i {
+    margin-right: 25px;
+    font-size: 35px;
+    line-height: 46px;
+}
+
+#title_filter {
+    padding: 4px;
+    cursor: pointer;
+}
+
+#title_filter:hover {
+    border-bottom: 3px solid #fff;
+    margin-bottom: -3px;
+    transition: .3s;
+}
+
+#filter_options {
+    display: flex;
+    justify-content: center;
+    height: 0;
+    transition: .3s;
+    overflow: hidden;
+}
+
+#filter_table {
+    width: 60%;
+    color: #fff;
+
+}
+
+#filter_table th, #filter_table td {
+    padding: 6px;
+    text-align: start;
+}
+
+#filter_table th {
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+}
+
+#filter_table td {
+    cursor: pointer;
+}
+
+#page_selector {
+    position: absolute;
+    right: 50px;
+    margin-top: -40px;
+    color: rgba(255, 255, 255, 0.46);
+
+}
+
+#page_left, #page_right {
+    padding: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#page_left:hover, #page_right:hover {
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 725px) {
+    #now_playing {
+        display: block;
+        margin-left: 20px;
+        width: fit-content;
+    }
+
+    #title_filter {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #banner {
+        display: none;
+    }
+
+    #now_playing {
+        margin-top: 130px;
+    }
+
+    header {
+        top: 0;
+        margin-top: 0 !important;
+    }
+
+    #main {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+
+    #banner_movie_title
+
+}
+
+@media screen and (max-width: 480px) {
+    #page_selector {
+        position: relative;
+        margin-top: 0p;
+        margin-left: 100px;
+    }
+}
